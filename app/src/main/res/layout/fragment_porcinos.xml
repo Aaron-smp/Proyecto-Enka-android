@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    tools:context=".Controlador.Porcinos">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/listaCerdos"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="13"
+                android:background="@color/teal_700"
+                android:divider="@color/teal_700"
+                android:dividerHeight="10dp"
+                android:fillViewport="true"
+                android:padding="10dp" />
+
+            <Button
+                android:id="@+id/referescarCerdos"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Refrescar"
+                android:background="@drawable/componente_lista"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:elevation="20dp"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>
